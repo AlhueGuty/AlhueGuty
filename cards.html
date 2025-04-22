@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Rosadas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 1em;
+            background-color: #ffe6f2; /* Fondo rosa claro */
+        }
+        .card-container {
+            display: flex;
+            gap: 1em; /* Espacio entre las cards */
+            justify-content: center; /* Centra las cards horizontalmente */
+        }
+        .card {
+            background-color: #ff4d94; /* Fondo rosado fuerte */
+            border: 2px solid #cc3366; /* Bordes oscuros para contraste */
+            border-radius: 10px; /* Bordes redondeados */
+            width: 200px;
+            padding: 1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+            text-align: center;
+            color: white; /* Letras blancas */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza la animación */
+        }
+        .card-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .card-image {
+            width: 100%; /* Ajusta el ancho al tamaño de la tarjeta */
+            height: 150px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Ajusta la imagen sin deformarla */
+            margin-bottom: 0.5em;
+            border-radius: 8px; /* Bordes redondeados para las imágenes */
+        }
+        .card-content {
+            font-size: 0.9em;
+        }
+        /* Animación al pasar el cursor por encima */
+        .card:hover {
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-title">Gatos</div>
+            <img class="card-image" src="gato.jpg" alt="Imagen de gatos">
+            <div class="card-content">Información sobre gatos.</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Flores</div>
+            <img class="card-image" src="flor.jpg" alt="Imagen de flores">
+            <div class="card-content">Detalles sobre flores.</div>
+        </div>
+        <div class="card">
+            <div class="card-title">Piedras</div>
+            <img class="card-image" src="piedras.jpg" alt="Imagen de piedras">
+            <div class="card-content">Datos sobre piedras.</div>
+        </div>
+    </div>
+</body>
+</html>
+
+

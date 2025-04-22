@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 2em;
+            background-color: #f9f9f9; /* Fondo claro de la página */
+        }
+        .form-container {
+            background-color: #d3d3d3; /* Fondo gris */
+            border: 2px solid black; /* Borde negro */
+            padding: 1.5em;
+            border-radius: 10px; /* Bordes redondeados */
+            width: 350px;
+            margin: auto; /* Centra el formulario */
+        }
+        .form-title {
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1em;
+        }
+        .form-group label {
+            flex: 1; /* Ajusta la etiqueta */
+        }
+        .form-group input,
+        .form-group select {
+            flex: 2; /* Ajusta el campo de entrada */
+            padding: 0.5em;
+            border: 1px solid black; /* Borde negro */
+            border-radius: 5px; /* Bordes redondeados */
+            background-color: #e0f7fa; /* Fondo celeste claro */
+        }
+        .form-radio-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .form-checkbox-group {
+            display: flex;
+            justify-content: space-between; /* Alinea las opciones horizontalmente */
+            align-items: center;
+            margin-bottom: 1em;
+        }
+        .submit-button {
+            display: block;
+            margin-left: auto; /* Mueve el botón hacia la derecha */
+            padding: 0.5em 1em;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-title">Inscripción</div>
+        <form>
+            <!-- Nombre -->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            </div>
+            <!-- Apellido -->
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+            </div>
+            <!-- Edad -->
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese su edad">
+            </div>
+            <!-- Sexo -->
+            <div class="form-radio-group">
+                <label>Sexo:</label>
+                <div>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" id="femenino" name="sexo" value="femenino">
+                    <label for="femenino">Femenino</label>
+                </div>
+            </div>
+            <!-- Idioma -->
+            <div class="form-group">
+                <label for="idioma">Idioma:</label>
+                <select id="idioma" name="idioma">
+                    <option value="español">Español</option>
+                    <option value="ingles">Inglés</option>
+                    <option value="frances">Francés</option>
+                </select>
+            </div>
+            <!-- Horario -->
+            <div class="form-checkbox-group">
+                <label for="horario">Horario:</label>
+                <div>
+                    <input type="checkbox" id="mañana" name="horario" value="mañana">
+                    <label for="mañana">Mañana</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="tarde" name="horario" value="tarde">
+                    <label for="tarde">Tarde</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="noche" name="horario" value="noche">
+                    <label for="noche">Noche</label>
+                </div>
+            </div>
+            <!-- Botón de envío -->
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
